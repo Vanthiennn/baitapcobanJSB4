@@ -254,6 +254,8 @@ function countMonth() {
         case "2" :
             if(yearCount % 4== 0 && yearCount % 100 !=0) {
                 document.getElementById("count").innerHTML = "Tháng " + monthCount + " năm " + yearCount + " có 29 ngày "
+            } else if(yearCount % 400 == 0 ) {
+                document.getElementById("count").innerHTML = "Tháng " + monthCount + " năm " + yearCount + " có 29 ngày "
             } else {
                 document.getElementById("count").innerHTML = "Tháng " + monthCount + " năm " + yearCount + " có 28 ngày "
             }
